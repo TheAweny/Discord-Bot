@@ -13,6 +13,12 @@ class ConsoleStartLog(commands.Cog):
     @commands.Cog.listener()
     async def on_ready(self):
         print(f"Bot {self.bot.user} is ready to work!")  # A message in the console about the bot's readiness
+        print(f" _______              _")
+        print(f" |_   _| |__   ___   / \__      _____ _ __  _   _ ")
+        print(f"   | | | '_ \ / _ \ / _ \ \ /\ / / _ \ '_ \| | | |")
+        print(f"   | | | | | |  __// ___ \ V  V /  __/ | | | |_| |")
+        print(f"   |_| |_| |_|\___/_/   \_\_/\_/ \___|_| |_|\__, |")
+        print(f"                                            |___/ ")
 
 
 def setup(bot):
