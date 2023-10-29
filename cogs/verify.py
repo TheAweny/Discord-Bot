@@ -40,6 +40,7 @@ class Verify(commands.Cog):
         self.persistents_views_added = False
 
     @commands.command()
+    @commands.has_permissions(administrator=True) 
     async def goverify(self, ctx):
 
         server_name = ctx.guild.name
@@ -61,7 +62,7 @@ class Verify(commands.Cog):
         if self.persistents_views_added:
             return
         verify_message_id = 0
-        self.bot.add_view(ButtonView(), message_id=Message ID) # ID of the message with the button (So that after restarting, the button does not break)
+        self.bot.add_view(ButtonView(), message_id=0) # ID of the message with the button (So that after restarting, the button does not break)
 
 
 def setup(bot):

@@ -12,7 +12,7 @@ class ClearChat(commands.Cog):
         self.bot = bot
 
     @commands.slash_command(name="clear", description="Clearing the chat.")
-    @commands.has_permission(administrator=True)  # Available only to people with administrator rights
+    @commands.has_permissions(administrator=True)   # Available only to people with administrator rights
     async def clear(self, ctx):
         await ctx.send("The chat will be cleared in 5 seconds.")  # Cleaning Announcement
         time.sleep(5)  # Delay of 5 seconds
